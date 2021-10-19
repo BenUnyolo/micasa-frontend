@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="pt-8 pb-5 text-white bg-primary-600">
+      <div class="inner-container">
+        <!-- top row -->
+        <div class="flex flex-row flex-wrap justify-between mb-4">
+          <a
+            href="/"
+            class="inline-block w-full text-3xl font-bold leading-10  font-poppins md:w-auto"
+          >
+            Mi<span class="text-secondary-600">Casa</span>
+          </a>
+          <nav
+            class="flex items-center inline-block w-full mb-4 sm:mb-0 sm:w-auto"
+          >
+            <ul
+              class="space-y-2 font-bold  xs:space-y-0 xs:space-x-6 xs:li-inline md:space-x-14 font-poppins"
+            >
+              <li>
+                <a
+                  href="/"
+                  class="
+                    text-secondary-600
+                    border-b-2
+                    pb-0.5
+                    border-secondary-600
+                  "
+                  >Home</a
+                >
+              </li>
+              <li><a href="#">Featured</a></li>
+              <li><a href="#">Holiday Packages</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="flex flex-row items-center">
+            <img src="assets/images/user_avatar.svg" alt="user avatar" />
+            <svg
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="pl-1"
+            >
+              <title>profile dropdown</title>
+              <path d="M7 12L0.0717964 0H13.9282L7 12Z" fill="white" />
+            </svg>
+          </div>
+        </div>
+        <!-- bottom row -->
+        <div>
+          <ul class="space-x-6 font-bold li-inline font-poppins">
+            <li>
+              Rent
+              <svg
+                width="12"
+                height="9"
+                viewBox="0 0 12 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline-block"
+              >
+                <path d="M6 9L0.803848 0H11.1962L6 9Z" fill="white" />
+              </svg>
+            </li>
+            <li>
+              Buy
+              <svg
+                width="12"
+                height="9"
+                viewBox="0 0 12 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline-block"
+              >
+                <path d="M6 9L0.803848 0H11.1962L6 9Z" fill="white" />
+              </svg>
+            </li>
+            <li>
+              Sell
+              <svg
+                width="12"
+                height="9"
+                viewBox="0 0 12 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline-block"
+              >
+                <path d="M6 9L0.803848 0H11.1962L6 9Z" fill="white" />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="flex inner-container">
+        <div class="w-full xs:w-5/6 sm:w-3/4 md:w-2/3 lg:w-6/12">
+          <h1 class="text-primary-600">Buy, Sell, Rent.</h1>
+          <h2 class="mt-7.5 text-primary-600">
+            The best deals, for both Realtors and Customers.
+          </h2>
+          <a
+            href="#"
+            class="
+              inline-block
+              mt-7.5
+              text-secondary-600
+              font-helvetica font-bold
+              text-xl
+              underline
+            "
+            >Explore More
+            <svg
+              width="43"
+              height="23"
+              viewBox="0 0 43 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="inline-block"
+            >
+              <path
+                d="M41.6936 12.9142C42.2794 12.3284 42.2794 11.3786 41.6936 10.7929L32.1477 1.24691C31.5619 0.661127 30.6122 0.661127 30.0264 1.24691C29.4406 1.8327 29.4406 2.78245 30.0264 3.36823L38.5117 11.8535L30.0264 20.3388C29.4406 20.9246 29.4406 21.8743 30.0264 22.4601C30.6122 23.0459 31.5619 23.0459 32.1477 22.4601L41.6936 12.9142ZM0.0714722 13.3535H40.633V10.3535H0.0714722V13.3535Z"
+                fill="#FF5722"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEARCH & HOW IT WORKS -->
+    <div class="relative">
+      <!-- what do you need -->
+      <div
+        class="relative z-10 w-full pt-5 -mt-5 -mb-5 text-sm text-white rounded-lg  md:absolute pb-7 font-poppins bg-primary-600 md:absolute-center inner-container md:-top-32"
+        id="homepage-search"
+      >
+        <div class="px-14 lg:px-28">
+          <h3 class="leading-normal uppercase font-poppins">
+            What do you need?
+          </h3>
+          <!-- search boxes -->
+          <span class="inline-block w-full mt-3">
+            <div class="flex flex-wrap -m-2.5">
+              <!-- location -->
+              <div class="w-full md:w-1/3 p-2.5">
+                <label for="location" class="block">Location</label>
+                <select name="location" id="search-location">
+                  <option value="verdun-montreal">Verdun, Montreal</option>
+                  <option value="sthenri-montreal">
+                    Saint Henri, Montreal
+                  </option>
+                  <option value="littleburgundy-montreal">
+                    Little Burgundy, Montreal
+                  </option>
+                </select>
+              </div>
+              <!-- category -->
+              <div class="w-full md:w-1/3 p-2.5">
+                <label for="category" class="block">Category</label>
+                <select name="category" id="search-category">
+                  <option value="1br-duplex">1 Bedroom Duplex</option>
+                  <option value="2br-duplex">2 Bedroom Duplex</option>
+                  <option value="3br-duplex">3 Bedroom Duplex</option>
+                </select>
+              </div>
+              <!-- category -->
+              <div class="w-full md:w-1/3 p-2.5">
+                <label for="budget" class="block">Budget</label>
+                <select name="budget" id="search-budget">
+                  <option value="50k-150k">$50,000 - $150,000</option>
+                  <option value="150k-250k">$150,001 - $250,000</option>
+                  <option value="250k-350k">$250,001 - $350,000</option>
+                </select>
+              </div>
+              <!-- search button -->
+              <div class="w-full md:w-1/3 p-2.5 md:ml-auto">
+                <div class="relative w-full">
+                  <button class="w-full md:absolute btn-standard">
+                    Search MiCasa
+                    <svg
+                      width="25"
+                      height="15"
+                      viewBox="0 0 25 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block"
+                    >
+                      <path
+                        d="M1.5625 8H20.0938L14.4219 12.36C14.2906 12.4611 14.1916 12.5778 14.1308 12.7034C14.0699 12.829 14.0483 12.961 14.0672 13.0919C14.1052 13.3564 14.3059 13.6003 14.625 13.77C14.9441 13.9397 15.3555 14.0214 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.64L24.6406 7.64C24.6932 7.59228 24.7402 7.54214 24.7812 7.49C24.7813 7.44 24.8594 7.41 24.8906 7.36C24.9614 7.24534 24.9985 7.12329 25 7C24.9985 6.87671 24.9614 6.75466 24.8906 6.64C24.8906 6.59 24.8125 6.56 24.7812 6.51C24.7402 6.45786 24.6932 6.40773 24.6406 6.36L16.8281 0.360002C16.6812 0.247119 16.4972 0.156339 16.2893 0.0941181C16.0814 0.0318971 15.8545 -0.000236672 15.625 1.91036e-06C15.2599 -0.000454603 14.9061 0.0809208 14.625 0.230002C14.4668 0.313951 14.336 0.417051 14.2401 0.533399C14.1443 0.649746 14.0852 0.777054 14.0663 0.908031C14.0475 1.03901 14.0692 1.17108 14.1302 1.29668C14.1912 1.42229 14.2903 1.53895 14.4219 1.64L20.0938 6H1.5625C1.1481 6 0.750672 6.10536 0.457646 6.2929C0.16462 6.48043 0 6.73479 0 7C0 7.26522 0.16462 7.51957 0.457646 7.70711C0.750672 7.89464 1.1481 8 1.5625 8Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <!-- how it works -->
+      <div
+        class="pt-20 pb-10  bg-secondary-600 bg-opacity-10 md:pt-28 text-grey-800"
+      >
+        <div class="inner-container">
+          <h3 class="text-center">How It Works</h3>
+          <div class="flex flex-wrap justify-center mt-10 lg:justify-between">
+            <!-- find a listing -->
+            <div class="flex w-96 md:w-144 lg:w-72">
+              <div class="flex items-center flex-none">
+                <img src="assets/images/find_listing.png" alt="" />
+              </div>
+              <div class="pl-5">
+                <h4 class="text-base font-bold">Find A Listing</h4>
+                <p class="mt-2 text-xs">
+                  Make a choice of the type of apartment and qualities that
+                  appeal to your interest.
+                </p>
+              </div>
+            </div>
+            <!-- arrow -->
+            <div class="items-center hidden text-xl text-primary-600 lg:flex">
+              →
+            </div>
+            <div
+              class="block w-full py-3 text-xl text-center  text-primary-600 lg:hidden"
+            >
+              ↓
+            </div>
+            <!-- talk to an agent -->
+            <div class="flex w-96 md:w-144 lg:w-72">
+              <div class="flex items-center flex-none">
+                <img src="assets/images/talk_to_agent.png" alt="" />
+              </div>
+              <div class="pl-5">
+                <h4 class="text-base font-bold">Talk to an Agent</h4>
+                <p class="mt-2 text-xs">
+                  Our Agents are available 24 Hours Mon-Sat.
+                </p>
+              </div>
+            </div>
+            <!-- arrow -->
+            <div class="items-center hidden text-xl text-primary-600 lg:flex">
+              →
+            </div>
+            <div
+              class="block w-full py-3 text-xl text-center  text-primary-600 lg:hidden"
+            >
+              ↓
+            </div>
+            <!-- set the date -->
+            <div class="flex w-96 md:w-144 lg:w-72">
+              <div class="flex items-center flex-none">
+                <img src="assets/images/set_date.png" alt="" />
+              </div>
+              <div class="pl-5">
+                <h4 class="text-base font-bold">Set the date and Move in!</h4>
+                <p class="mt-2 text-xs">
+                  Make payments, get reciept and all other important documents,
+                  set your move-in date.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED HOUSES -->
+    <div class="mt-24 inner-container">
+      <!-- title row -->
+      <div class="flex flex-row flex-wrap justify-between">
+        <!-- title -->
+        <h3 class="inline-block w-full orange-underline mb-9 lg:mb-0 lg:w-auto">
+          Featured Houses
+        </h3>
+        <!-- building type buttons -->
+        <div class="sm:space-x-7">
+          <span class="block sm:inline">
+            <button class="btn-rounded btn-rounded--orange">
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                class="inline-block mr-2.5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.298 10.7351V19.179C21.2978 19.4439 21.2261 19.7037 21.0903 19.9311C20.9546 20.1584 20.7599 20.3449 20.5269 20.4707C20.3157 20.5849 20.0789 20.6433 19.8388 20.6402H15.45C15.2562 20.6402 15.0704 20.5632 14.9334 20.4262C14.7964 20.2892 14.7194 20.1033 14.7194 19.9096V15.5253C14.7194 15.3315 14.6424 15.1457 14.5054 15.0087C14.3684 14.8717 14.1825 14.7947 13.9888 14.7947H11.0664C10.8726 14.7947 10.6868 14.8717 10.5497 15.0087C10.4127 15.1457 10.3358 15.3315 10.3358 15.5253V19.9096C10.3358 20.1033 10.2588 20.2892 10.1218 20.4262C9.98476 20.5632 9.79892 20.6402 9.60516 20.6402H5.22491C5.01776 20.6407 4.81289 20.5969 4.62403 20.5118C4.43516 20.4267 4.26667 20.3023 4.12983 20.1467C3.88963 19.8689 3.75934 19.5128 3.76353 19.1456V10.735C3.76368 10.5314 3.8063 10.3301 3.88865 10.1439C3.971 9.95775 4.09128 9.79079 4.2418 9.65371L11.5472 3.01134C11.8155 2.76554 12.1662 2.62918 12.5301 2.62915C12.894 2.62912 13.2448 2.76541 13.5132 3.01116L20.8198 9.6538C20.9703 9.7909 21.0906 9.95787 21.1729 10.1441C21.2552 10.3302 21.2978 10.5315 21.298 10.7351Z"
+                  class="fill-current"
+                />
+              </svg>
+              House
+            </button>
+          </span>
+          <span class="block sm:inline">
+            <button class="btn-rounded">
+              <svg
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+                class="inline-block mr-2.5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.52066 17.0955H1.59825C1.06247 17.0955 0.624107 16.6571 0.624107 16.1213V5.10381C0.624107 4.69468 0.867642 4.33424 1.24756 4.18812L11.9631 0.0675206C12.1112 0.0103599 12.271 -0.00973006 12.4287 0.00899941C12.5864 0.0277289 12.7371 0.0847102 12.8677 0.174983C12.9983 0.265256 13.1048 0.386083 13.1781 0.526948C13.2513 0.667813 13.289 0.824446 13.2879 0.98321V6.37993H5.4948C4.95902 6.37993 4.52066 6.8183 4.52066 7.35407V17.0955ZM14.262 8.32821H7.44307C6.9073 8.32821 6.46894 8.76657 6.46894 9.30235V16.1213C6.46894 16.6571 6.9073 17.0955 7.44307 17.0955H11.3396V13.1989C11.3396 12.6631 11.778 12.2248 12.3138 12.2248C12.8495 12.2248 13.2879 12.6631 13.2879 13.1989V17.0955H17.1845C17.7202 17.0955 18.1586 16.6571 18.1586 16.1213V8.32821C18.1586 7.25666 17.2819 6.37993 16.2103 6.37993C15.1388 6.37993 14.262 7.25666 14.262 8.32821Z"
+                  class="fill-current"
+                />
+              </svg>
+              Villa
+            </button>
+          </span>
+          <span class="block sm:inline">
+            <button class="btn-rounded">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                class="inline-block mr-2.5"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.3568 8.35402V2.50919C14.3568 1.43764 13.4801 0.560913 12.4086 0.560913H6.56373C5.49218 0.560913 4.61545 1.43764 4.61545 2.50919V4.45746H2.66718C1.59563 4.45746 0.718903 5.33419 0.718903 6.40574V16.1471C0.718903 17.2187 1.59563 18.0954 2.66718 18.0954H8.51201V14.1988H10.4603V18.0954H16.3051C17.3767 18.0954 18.2534 17.2187 18.2534 16.1471V10.3023C18.2534 9.23074 17.3767 8.35402 16.3051 8.35402H14.3568ZM4.61545 16.1471H2.66718V14.1988H4.61545V16.1471ZM4.61545 12.2506H2.66718V10.3023H4.61545V12.2506ZM4.61545 8.35402H2.66718V6.40574H4.61545V8.35402ZM8.51201 12.2506H6.56373V10.3023H8.51201V12.2506ZM8.51201 8.35402H6.56373V6.40574H8.51201V8.35402ZM8.51201 4.45746H6.56373V2.50919H8.51201V4.45746ZM12.4086 12.2506H10.4603V10.3023H12.4086V12.2506ZM12.4086 8.35402H10.4603V6.40574H12.4086V8.35402ZM12.4086 4.45746H10.4603V2.50919H12.4086V4.45746ZM16.3051 16.1471H14.3568V14.1988H16.3051V16.1471ZM16.3051 12.2506H14.3568V10.3023H16.3051V12.2506Z"
+                  class="fill-current"
+                />
+              </svg>
+
+              Apartment
+            </button>
+          </span>
+        </div>
+        <!-- arrows -->
+        <div>
+          <button class="border-white btn-rounded text-grey-800">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              class="inline-block"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.1585 22.2809C17.4219 22.2815 17.677 22.1892 17.8798 22.0201C17.9939 21.9249 18.0882 21.808 18.1574 21.6761C18.2265 21.5441 18.2691 21.3998 18.2827 21.2513C18.2963 21.1027 18.2807 20.953 18.2367 20.8105C18.1927 20.6681 18.1212 20.5358 18.0263 20.4212L12.9775 14.3431L17.846 8.25361C17.9396 8.13762 18.0095 8.00415 18.0517 7.86089C18.0939 7.71762 18.1075 7.56738 18.0918 7.4188C18.0761 7.27021 18.0313 7.12622 17.9601 6.99509C17.889 6.86396 17.7927 6.74828 17.6769 6.6547C17.5603 6.55147 17.4238 6.4736 17.2759 6.42598C17.1279 6.37837 16.9718 6.36204 16.8173 6.37801C16.6628 6.39398 16.5133 6.44191 16.3781 6.5188C16.2428 6.59569 16.1249 6.69986 16.0316 6.8248L10.5884 13.6287C10.4226 13.8316 10.332 14.0861 10.332 14.3488C10.332 14.6114 10.4226 14.8659 10.5884 15.0688L16.2232 21.8727C16.3362 22.0099 16.4798 22.1184 16.6423 22.1893C16.8049 22.2603 16.9817 22.2917 17.1585 22.2809Z"
+                class="fill-current"
+              />
+            </svg>
+          </button>
+          <button class="btn-rounded btn-rounded--orange">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              class="inline-block"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.4953 6.37421C11.232 6.37369 10.9768 6.46597 10.774 6.63503C10.6599 6.73022 10.5656 6.84714 10.4964 6.97907C10.4273 7.11101 10.3847 7.25537 10.3711 7.4039C10.3575 7.55242 10.3731 7.70219 10.4171 7.84462C10.4611 7.98705 10.5326 8.11935 10.6275 8.23394L15.6763 14.3121L10.8078 20.4015C10.7142 20.5175 10.6443 20.651 10.6021 20.7943C10.5599 20.9375 10.5463 21.0878 10.562 21.2364C10.5777 21.3849 10.6225 21.5289 10.6937 21.6601C10.7649 21.7912 10.8611 21.9069 10.9769 22.0005C11.0935 22.1037 11.23 22.1816 11.3779 22.2292C11.5259 22.2768 11.682 22.2931 11.8365 22.2771C11.991 22.2612 12.1405 22.2132 12.2757 22.1364C12.411 22.0595 12.5289 21.9553 12.6222 21.8304L18.0654 15.0265C18.2312 14.8236 18.3218 14.5691 18.3218 14.3064C18.3218 14.0437 18.2312 13.7892 18.0654 13.5863L12.4306 6.78244C12.3176 6.64521 12.174 6.53673 12.0115 6.4658C11.8489 6.39487 11.6721 6.36349 11.4953 6.37421Z"
+                class="fill-current"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- house cards -->
+      <!-- house cards -->
+      <!-- house cards -->
+      <!-- house cards -->
+      <!-- house cards -->
+      <div id="featured-houses" class="flex -mx-4 overflow-x-scroll mt-9">
+        <!-- card 1 -->
+        <div class="flex-none w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/4">
+          <div class="border p-2.5 rounded-lg bg-white w-full">
+            <!-- top section -->
+            <div class="relative">
+              <!-- image -->
+              <img
+                src="assets/images/house_cards/house_1.png"
+                alt="house with balcony"
+                class="object-cover w-full rounded-lg h-86"
+              />
+              <!-- tag -->
+              <div class="house-card__tag house-card__tag--new-house">
+                New House
+              </div>
+            </div>
+            <!-- title section -->
+            <div class="flex justify-between mt-3.5">
+              <!-- title -->
+              <h4 class="inline-flex items-center text-grey-800">
+                Verdun, Montreal
+              </h4>
+              <!-- icons -->
+              <div class="inline-flex items-center flex-none">
+                <!-- bedrooms -->
+                <div class="inline-block">
+                  <div class="text-center">
+                    <svg
+                      width="18"
+                      height="17"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="inline-block"
+                    >
+                      <path
+                        d="M4.01701 15.228C4.01701 15.228 3.00223 15.228 3.00223 14.2132C3.00223 13.1984 4.01701 10.1541 9.0909 10.1541C14.1648 10.1541 15.1796 13.1984 15.1796 14.2132C15.1796 15.228 14.1648 15.228 14.1648 15.228H4.01701ZM9.0909 9.13933C9.89831 9.13933 10.6726 8.81859 11.2436 8.24766C11.8145 7.67674 12.1352 6.9024 12.1352 6.09499C12.1352 5.28759 11.8145 4.51325 11.2436 3.94232C10.6726 3.3714 9.89831 3.05066 9.0909 3.05066C8.28349 3.05066 7.50915 3.3714 6.93823 3.94232C6.36731 4.51325 6.04656 5.28759 6.04656 6.09499C6.04656 6.9024 6.36731 7.67674 6.93823 8.24766C7.50915 8.81859 8.28349 9.13933 9.0909 9.13933Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                  </div>
+                  <div class="text-center text-xxxs">3 Bedroom</div>
+                </div>
+                <!-- wifi -->
+                <div class="inline-block pl-1.5">
+                  <div class="text-center">
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.60449 4.65059C10.9625 4.65059 13.1625 5.55259 14.7998 7.18993L15.7425 6.24726C13.8538 4.35793 11.3185 3.31726 8.60449 3.31726C5.89049 3.31793 3.35516 4.35793 1.46649 6.24726L2.40916 7.18993C4.04649 5.55259 6.24649 4.65059 8.60449 4.65059ZM12.3852 10.1886C10.3358 8.13926 6.87316 8.13926 4.82383 10.1886L5.76649 11.1313C7.30449 9.59326 9.90449 9.59326 11.4425 11.1313L12.3852 10.1886Z"
+                        fill="#333333"
+                      />
+                      <path
+                        d="M14.2291 8.17933C11.1811 5.13 6.02847 5.13 2.98047 8.17933L3.92314 9.122C6.46114 6.584 10.7485 6.584 13.2865 9.122L14.2291 8.17933Z"
+                        fill="#333333"
+                      />
+                      <path
+                        d="M8.60448 13.9839C9.34086 13.9839 9.93782 13.387 9.93782 12.6506C9.93782 11.9142 9.34086 11.3173 8.60448 11.3173C7.8681 11.3173 7.27115 11.9142 7.27115 12.6506C7.27115 13.387 7.8681 13.9839 8.60448 13.9839Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                  </div>
+                  <div class="text-center text-xxxs">Wi-Fi</div>
+                </div>
+              </div>
+            </div>
+            <!-- price -->
+            <div class="mt-3.5">
+              <p>
+                <span class="inline-block text-xs leading-7 align-top">$</span
+                ><span class="inline-block text-xl">200,000</span
+                ><span class="inline-block text-xs leading-7 align-bottom">
+                  &nbsp;/anum</span
+                >
+              </p>
+            </div>
+            <!-- interest -->
+            <div class="mt-3.5">
+              <!-- avatars -->
+              <div class="relative inline-block min-w-15">
+                <img
+                  src="assets/images/house_cards/placeholder_avatar_1.jpeg"
+                  class="inline-block object-cover rounded-full h-7 w-7"
+                  alt="user 1 avatar"
+                />
+                <img
+                  src="assets/images/house_cards/placeholder_avatar_2.png"
+                  class="absolute inline-block object-cover rounded-full  left-4 h-7 w-7"
+                  alt="user 1 avatar"
+                />
+                <span class="absolute inline-block left-8 h-7 w-7">
+                  <span class="relative inline-block w-full h-full">
+                    <img
+                      src="assets/images/house_cards/placeholder_avatar_3.jpeg"
+                      class="inline-block object-cover w-full h-full rounded-full "
+                      alt="user 1 avatar"
+                    />
+                    <span
+                      class="absolute font-bold text-white transform -translate-x-1/2 -translate-y-1/2  text-xxs left-1/2 top-1/2"
+                      >+30</span
+                    >
+                  </span>
+                </span>
+              </div>
+              <!-- text -->
+              <p class="inline-block text-xxs">
+                have interest in this property
+              </p>
+            </div>
+            <!-- view more button -->
+            <div class="flex justify-center w-full mt-5 text-white">
+              <a href="#" class="px-12 btn-standard"
+                >View More
+                <svg
+                  width="18"
+                  height="11"
+                  viewBox="0 0 18 11"
+                  fill="none"
+                  class="inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.38233 6.27924H14.3339L10.3698 9.32648C10.278 9.39715 10.2089 9.4787 10.1664 9.56647C10.1238 9.65424 10.1087 9.74652 10.1219 9.83802C10.1485 10.0228 10.2888 10.1933 10.5118 10.3119C10.7348 10.4306 11.0223 10.4876 11.3111 10.4706C11.5999 10.4536 11.8662 10.3638 12.0516 10.2211L17.5118 6.02764C17.5485 5.99428 17.5814 5.95924 17.6101 5.9228C17.6101 5.88786 17.6647 5.86689 17.6865 5.83194C17.736 5.75181 17.7619 5.6665 17.763 5.58034C17.7619 5.49417 17.736 5.40887 17.6865 5.32873C17.6865 5.29379 17.6319 5.27282 17.6101 5.23787C17.5814 5.20143 17.5485 5.16639 17.5118 5.13304L12.0516 0.939596C11.9489 0.860702 11.8203 0.797255 11.675 0.753768C11.5297 0.710281 11.3711 0.687823 11.2107 0.68799C10.9555 0.687671 10.7083 0.744544 10.5118 0.848738C10.4012 0.907411 10.3098 0.979468 10.2428 1.06078C10.1758 1.1421 10.1345 1.23108 10.1214 1.32262C10.1082 1.41416 10.1233 1.50646 10.166 1.59425C10.2086 1.68203 10.2779 1.76357 10.3698 1.8342L14.3339 4.88143H1.38233C1.0927 4.88143 0.814933 4.95507 0.610135 5.08614C0.405337 5.21721 0.290283 5.39498 0.290283 5.58034C0.290283 5.7657 0.405337 5.94347 0.610135 6.07454C0.814933 6.20561 1.0927 6.27924 1.38233 6.27924Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-none w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/4">
+          card 2
+        </div>
+        <div class="flex-none w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/4">
+          card 3
+        </div>
+        <div class="flex-none w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/4">
+          card 4
+        </div>
+        <div class="flex-none w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/4">
+          card 5
+        </div>
+        <div class="flex-none w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/4">
+          card 6
+        </div>
+      </div>
+
+      <!-- POPULAR CITIES -->
+      <div class="inner-container mt-28">
+        <!-- title row -->
+        <div class="flex flex-row flex-wrap justify-between">
+          <h3 class="w-full uppercase orange-underline sm:w-auto">
+            Popular Cities
+          </h3>
+          <div class="flex items-center mt-5 sm:mt-0">
+            <a href="#" class="text-secondary-600"
+              ><span class="inline-block mr-1 text-xl underline font-helvetica"
+                >Explore More</span
+              >
+              <svg
+                width="42"
+                height="8"
+                viewBox="0 0 42 8"
+                fill="none"
+                class="inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M40.9866 4.20707C41.1819 4.01181 41.1819 3.69522 40.9866 3.49996L37.8046 0.317982C37.6093 0.12272 37.2928 0.12272 37.0975 0.317982C36.9022 0.513244 36.9022 0.829826 37.0975 1.02509L39.9259 3.85352L37.0975 6.68194C36.9022 6.8772 36.9022 7.19379 37.0975 7.38905C37.2928 7.58431 37.6093 7.58431 37.8046 7.38905L40.9866 4.20707ZM0.0715332 4.35352H40.633V3.35352H0.0715332V4.35352Z"
+                  fill="#FF5722"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- city blocks -->
+        <div class="mt-12">
+          <div class="flex flex-wrap -m-2 text-xl font-bold text-white md:-m-4">
+            <!-- lagos -->
+            <div class="w-1/2 p-2 md:p-4 sm:w-1/4">
+              <a
+                href="#"
+                class="relative block w-full  sm:mb-14 bg-grey-800 hover:box-shadow-1"
+              >
+                <img
+                  src="assets/images/popular_cities/lagos.png"
+                  alt="Lekki-Ikoyi Bridge, Lagos"
+                  class="object-cover w-full opacity-50  max-h-144 sm:max-h-none sm:h-96 md:h-144 lg:h-185"
+                />
+                <div
+                  class="absolute transform -translate-x-1/2 left-1/2 bottom-12"
+                >
+                  Lagos
+                </div>
+              </a>
+            </div>
+            <!-- paris -->
+            <div class="w-1/2 p-2 md:p-4 sm:w-1/4">
+              <a
+                href="#"
+                class="relative block w-full  sm:mt-14 bg-grey-800 hover:box-shadow-1"
+              >
+                <img
+                  src="assets/images/popular_cities/paris.png"
+                  alt="Eiffel Tower, Paris"
+                  class="object-cover w-full opacity-50  max-h-144 sm:max-h-none sm:h-96 md:h-144 lg:h-185"
+                />
+                <div
+                  class="absolute transform -translate-x-1/2 left-1/2 bottom-12"
+                >
+                  Paris
+                </div>
+              </a>
+            </div>
+            <!-- london -->
+            <div class="w-1/2 p-2 md:p-4 sm:w-1/4">
+              <a
+                href="#"
+                class="relative block w-full  sm:mb-14 bg-grey-800 hover:box-shadow-1"
+              >
+                <img
+                  src="assets/images/popular_cities/london.png"
+                  alt="Big Ben, London"
+                  class="object-cover w-full opacity-50  max-h-144 sm:max-h-none sm:h-96 md:h-144 lg:h-185"
+                />
+                <div
+                  class="absolute transform -translate-x-1/2 left-1/2 bottom-12"
+                >
+                  London
+                </div>
+              </a>
+            </div>
+            <!-- dubai -->
+            <div class="w-1/2 p-2 md:p-4 sm:w-1/4">
+              <a
+                href="#"
+                class="relative block w-full  sm:mt-14 bg-grey-800 hover:box-shadow-1"
+              >
+                <img
+                  src="assets/images/popular_cities/dubai.png"
+                  alt="Burj Al Arab, Dubai"
+                  class="object-cover w-full opacity-50  max-h-144 sm:max-h-none sm:h-96 md:h-144 lg:h-185"
+                />
+                <div
+                  class="absolute transform -translate-x-1/2 left-1/2 bottom-12"
+                >
+                  Dubai
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

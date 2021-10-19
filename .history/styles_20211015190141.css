@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-red-700 text-white rounded px-4 py-2;
+  }
+}
+
+@layer utilities {
+  .inner-container {
+    @apply mx-auto;
+    max-width: 70.625rem;
+  }
+}
