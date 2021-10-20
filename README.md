@@ -1,6 +1,6 @@
 # Frontend Demo
 
-Built using using HTML, CSS and Vanilla JavaScript. CSS built with Tailwind CLI. Go to XXX to view a demo.
+Built using using HTML, CSS and Vanilla JavaScript. CSS compiled with Tailwind CLI. Go [here](https://benunyolo.github.io/micasa-frontend/) to view a demo.
 
 ## Build
 
